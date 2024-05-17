@@ -40,7 +40,7 @@
     $aasta = $_GET ["aasta"];
     $hind = $_GET ["hind"];
 
-    $paring = "INSERT INTO albumid(artist, album, aasta, hind) VALUES ('$artist', '$album', '$aasta', '$hind')";
+    $paring = "INSERT INTO albumid (artist, album, aasta, hind) VALUES ('$artist', '$album', '$aasta', '$hind')";
     print_r ($paring);
     $valjund = mysqli_query($yhendus, $paring);
     if ($valjund){
